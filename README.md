@@ -1,5 +1,5 @@
 [![Version: PyPI](https://img.shields.io/pypi/v/nba_live.svg?longCache=true&style=for-the-badge&logo=pypi)](https://pypi.python.org/pypi/nba_live)
-[![License: MIT](https://img.shields.io/github/license/swar/nba_live.svg?style=for-the-badge)](https://github.com/swar/nba_live/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/swar/nba_live.svg?style=for-the-badge)](https://github.com/D-Leornas/nba_live/LICENSE)
 
 # nba_live
 
