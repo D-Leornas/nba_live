@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nba_live_D_Leornas"
+version = "0.0.1"
+authors = [
+  { name="Donnie Leornas", email="donnieleo22@gmail.com" },
+]
+description = "A data streaming package that builds off the nba_api package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
