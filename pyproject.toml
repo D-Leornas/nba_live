@@ -1,17 +1,20 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[project]
-name = "nba_live_D_Leornas"
-version = "0.0.1"
-authors = [
-  { name="Donnie Leornas", email="donnieleo22@gmail.com" },
-]
-description = "A data streaming package that builds off the nba_api package"
+[tool.poetry]
+name = "nba_live"
+version = "0.3.0"
+description = "This package allows a user to easily grab data from the live endpoints in the nba_api package"
+authors = ["Donnie Leornas <Donnieleo22@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.10"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
-]
+packages = [{include = "nba_live"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+nba-api = "^1.4.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

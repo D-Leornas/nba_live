@@ -1,5 +1,5 @@
-from src.nba_live_D_Leornas.getgamedata import GetGameData
-from src.nba_live_D_Leornas.getboxscore import GetBoxScore
+from nba_live.getgamedata import GetGameData
+from nba_live.getboxscore import GetBoxScore
 import time
 from datetime import datetime, timezone
 import pandas as pd
