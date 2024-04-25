@@ -3,9 +3,9 @@
 
 # nba_live
 
-## An interface for the nba_api package
+## An interface for the nba_api boxscore endpoint
 
-This package allows a user to easily grab data from the live endpoints in the nba_api package. This package is still very young, is not tested thoroughly, and is extremely feature depraved.
+This package allows a user to easily grab data from the boxscore endpoint in the nba_api package. This package is still very young, is not tested thoroughly, and is extremely feature depraved.
 
 That being said, if you'd like to install,
 
