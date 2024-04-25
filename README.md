@@ -34,11 +34,11 @@ The data is currently organized in a data frame where each row is organized as f
 
 ```json
 {
-    "gameId": id,
-    "hometeamId": home_team_id,
-    "awayTeamId": away_team_id,
-    "homeTeamPlayers": dataframe holding player data,
-    "awayTeamPlayers": dataframe holding player data
+  "gameId": "id",
+  "hometeamId": "home_team_id",
+  "awayTeamId": "away_team_id",
+  "homeTeamPlayers": "dataframe holding player data",
+  "awayTeamPlayers": "dataframe holding player data"
 }
 ```
 
