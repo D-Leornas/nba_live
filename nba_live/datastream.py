@@ -1,7 +1,7 @@
 from nba_live.getgamedata import GetGameData
 from nba_live.getboxscore import GetBoxScore
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 import pandas as pd
 
 def dataStream(queue, game_data):    
@@ -13,13 +13,18 @@ def dataStream(queue, game_data):
     active_ids = []
 
     while True:
-        
+
+        key_removal = []
+
         for game_time in activator.keys():
-            if datetime.now().replace(tzinfo=timezone.utc).timestamp() >= datetime.strptime(game_time, "%Y-%m-%dT%H:%M:%SZ").timestamp():
+            if datetime.now(UTC).replace(microsecond=0).replace(tzinfo=None) >= datetime.strptime(game_time, "%Y-%m-%dT%H:%M:%SZ"):
                 active_ids.append(activator[game_time])
-                activator.pop(game_time)
+                key_removal.append(game_time)
             else:
                 print(activator[game_time] + " has not started")
+
+        for key in key_removal:
+            activator.pop(key)
              
         data_holder = []
         for id in active_ids:

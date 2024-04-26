@@ -14,7 +14,7 @@ class NBALive():
 
     def start(self):
         self.get_stats_process.start()
-        time.sleep(1)
+        time.sleep(2)
 
     def stop(self):
         self.get_stats_process.join()
